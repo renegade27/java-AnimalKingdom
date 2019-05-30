@@ -5,7 +5,7 @@ import java.util.*;
 public class Main {
 
     public static ArrayList<AbstractAnimal> printAnimals(ArrayList<AbstractAnimal> animals, CheckAnimal tester) {
-        ArrayList<AbstractAnimal> sortedList = new ArrayList();
+        ArrayList<AbstractAnimal> sortedList = new ArrayList<AbstractAnimal>();
         animals.forEach((animal) -> {
             if(tester.test(animal)) {
                 sortedList.add(animal);
@@ -62,7 +62,7 @@ public class Main {
         //7
 
         System.out.println("Task Seven: (List alphabetically only those animals that were named in 1758)");
-        ArrayList<AbstractAnimal> taskseven = new ArrayList();
+        ArrayList<AbstractAnimal> taskseven = new ArrayList<AbstractAnimal>();
         taskseven = printAnimals(animals, a -> a.getYear() == 1758);
         taskseven.sort((a1, a2) -> a1.getName().compareToIgnoreCase(a2.getName()));
         System.out.println(taskseven.toString());
@@ -90,7 +90,7 @@ public class Main {
         Fish catfish = new Fish("Catfish", 1817);
         Fish salmon = new Fish("Salmon", 1758);
 
-        ArrayList<AbstractAnimal> animals = new ArrayList();
+        ArrayList<AbstractAnimal> animals = new ArrayList<AbstractAnimal>();
 
         animals.add(lemur);
         animals.add(panda);
