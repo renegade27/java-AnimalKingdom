@@ -1,5 +1,7 @@
 # Project Animal Kingdom Search
 
+- Initial commit
+
 A student that completes this project shows that they can:
 * implement and use interfaces in Java
 * implement and use abstract classes in Java
